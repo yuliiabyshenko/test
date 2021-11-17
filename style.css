@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: #cfcbca;
+    color: #323232;
+
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dark-mode{
+    background-color: #0c0c0c;
+    color: #8d8d8d;
+}
+
+a{
+    text-decoration: none;
+    color: #323232;
+    cursor: pointer;
+    text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.05);
+
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: red;
+}
+
+h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+.container{
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.personal_info{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.personal_info-text{
+    margin-left: 40px;
+}
+
+.personal_info-text h1, h4{
+    margin-bottom: 10px;
+    
+}
+
+.personal_info-text p {
+    color: #86898f;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.avatar{
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 14px rgba(0,0,0, 0.25);
+}
+
+li{
+    list-style: none; 
+}
+
+.contact-img{
+    width: 16px;
+    height: 16px;
+}
+
+@media(max-width: 700px){
+    .container{
+        margin: 0 20px 20px 20px;
+    }
+    .personal_info{
+        display: block;
+        text-align: center;
+    }
+    .personal_info-text{
+        margin: 20px 20px  0px 20px;
+        text-align: center;
+
+    }
+    .contact-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+}
+
+.card{
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    color:#323232;
+}
+.summary{
+    background: #ffe5e5;
+}
+
+.experience{
+    background: #fff9dc;
+}
+
+.education{
+    background: #e5ffe7;
+}
+
+.skills{
+    background: #e5f0ff;
+}
+
+.table{
+    width: 100%;
+}
+
+
+.skills-list {
+    margin: 0;
+    padding: 0;
+}
+  
+.skills-list dt {
+    padding-left: 32px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+  
+.skill-html {
+    background-image: url("img/html_icon.svg");
+}
+  
+.skill-css {
+    background-image: url("img/css_icon.svg");
+}
+
+.skill-javascript{
+    background-image: url("img/javascript_icon.svg");
+}
+
+
+.level {
+    margin: 4px 0 18px;
+    padding: 0;
+    height: 16px;
+    font-size: 0;
+    background-color: #ffffff;
+    border: 1px solid #323232;
+    border-radius: 9px;
+}
+  
+.level div {
+    margin: 0px;
+    height: 15px;
+    background-color: #323232;
+    border-radius: 9px;
+}
+
+.btn{
+    background: #111;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw; 
+}
+
+.btn:hover{
+    opacity: 0.9;
+} 
